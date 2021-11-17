@@ -19,7 +19,9 @@ class UserSeeder extends Seeder
     {
         \App\Models\User::factory(40)->create();
         User::create(
-            [ ]
+            ['name' => 'Geronimoss',
+                'email' => 'geronimo1@gmail.com',
+                'password' => bcrypt('laravel')]
     );
     }
 }
