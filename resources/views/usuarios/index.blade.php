@@ -21,13 +21,13 @@
       <th scope="col">Contraseña</th>
     </tr>
   </thead>
-  @foreach($users as $users)
+  @foreach($users as $us)
   <tbody>
     <tr>
-      <th scope="row">{{$users->id}}</th>
-      <td>{{$users->name}}</td>
-      <td>{{$users->email}}</td>
-      <td>{{$users->password}}</td>
+      <th>{{$us->id}}</th>
+      <td>{{$us->name}}</td>
+      <td>{{$us->email}}</td>
+      <td>{{$us->password}}</td>
     </tr>
     @endforeach
   </tbody>
